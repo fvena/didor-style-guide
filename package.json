@@ -1,0 +1,69 @@
+{
+  "name": "@didor/style-guide",
+  "version": "0.0.1",
+  "description": "Didor development style guide",
+  "author": {
+    "name": "Francisco Vena",
+    "email": "fvena32@gmail.com",
+    "url": "http://www.fvena.com"
+  },
+  "homepage": "https://github.com/fvena/didor-style-guide#readme",
+  "bugs": {
+    "url": "https://github.com/fvena/didor-style-guide/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fvena/didor-style-guide.git"
+  },
+  "license": "MIT",
+  "exports": {
+    "./eslint/*": "./eslint/*.js",
+    "./prettier/*": "./prettier/index.js",
+    "./stylelint/*": "./stylelint/index.js",
+    "./typescript/*": "./typescript/tsconfig.base.json"
+  },
+  "main": "index.js",
+  "files": [
+    "eslint",
+    "prettier",
+    "stylelint",
+    "typescript",
+    "vitest"
+  ],
+  "scripts": {
+    "eslint": "eslint --max-warnings 0",
+    "prepare": "husky",
+    "prettier": "prettier --check .",
+    "semantic-release": "semantic-release",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "*": "prettier -w --ignore-unknown"
+  },
+  "prettier": "./prettier",
+  "keywords": [
+    "ESLint",
+    "Prettier",
+    "Stylelint",
+    "Typescript",
+    "Style",
+    "Guide"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@semantic-release/git": "^10.0.1",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5",
+    "prettier": "^3.3.1",
+    "semantic-release": "^24.0.0",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.57.0 <9",
+    "prettier": ">= 3.3.1 <4",
+    "stylelint": "^16.6.1 <17",
+    "typescript": ">= 5.4.5 <6"
+  }
+}
