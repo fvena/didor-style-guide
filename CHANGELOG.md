@@ -1,3 +1,10 @@
+# [0.3.0](https://github.com/fvena/didor-style-guide/compare/v0.2.0...v0.3.0) (2024-06-08)
+
+
+### Features
+
+* **typescript:** add typescript config ([ab93ff6](https://github.com/fvena/didor-style-guide/commit/ab93ff6e81774789dc0e748901dfab96a09b9cb3))
+
 # [0.2.0](https://github.com/fvena/didor-style-guide/compare/v0.1.0...v0.2.0) (2024-06-08)
 
 
