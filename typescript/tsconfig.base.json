@@ -2,5 +2,21 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Didor Base",
   "docs": "https://github.com/fvena/didor-style-guide",
-  "compilerOptions": {}
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "useDefineForClassFields": true,
+    "verbatimModuleSyntax": true,
+
+    // Required in Vite because uses esbuild for transpiling TypeScript and is subject to single-file transpile limitations.
+    "isolatedModules": true,
+    // For `<script setup>`
+    // See <https://devblogs.microsoft.com/typescript/announcing-typescript-4-5-beta/#preserve-value-imports>
+    "preserveValueImports": true
+  }
 }

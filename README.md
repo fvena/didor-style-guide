@@ -37,11 +37,11 @@ Create or update `.eslintrc.js` in your project root and extend the configuratio
 ```js
 module.exports = {
   extends: [
-    require.resolve("@didor/style-guide/eslint/browser"),
-    require.resolve("@didor/style-guide/eslint/vue"),
-    require.resolve("@didor/style-guide/eslint/typescript"),
-  ],
-};
+    require.resolve('@didor/style-guide/eslint/browser'),
+    require.resolve('@didor/style-guide/eslint/vue'),
+    require.resolve('@didor/style-guide/eslint/typescript')
+  ]
+}
 ```
 
 ### Configuring ESLint for TypeScript
@@ -51,27 +51,27 @@ Some of the rules enabled in the TypeScript config require additional type infor
 For more information, see: [https://typescript-eslint.io/docs/linting/type-linting](https://typescript-eslint.io/docs/linting/type-linting)
 
 ```js
-const { resolve } = require("node:path");
+const { resolve } = require('node:path')
 
-const project = resolve(__dirname, "tsconfig.json");
+const project = resolve(__dirname, 'tsconfig.json')
 
 module.exports = {
   root: true,
   extends: [
-    require.resolve("@vercel/style-guide/eslint/node"),
-    require.resolve("@vercel/style-guide/eslint/typescript"),
+    require.resolve('@vercel/style-guide/eslint/node'),
+    require.resolve('@vercel/style-guide/eslint/typescript')
   ],
   parserOptions: {
-    project,
+    project
   },
   settings: {
-    "import/resolver": {
+    'import/resolver': {
       typescript: {
-        project,
-      },
-    },
-  },
-};
+        project
+      }
+    }
+  }
+}
 ```
 
 ## Prettier
@@ -94,11 +94,16 @@ Create or update `.stylelintrc.js` in your project root:
 
 ```js
 module.exports = {
-  extends: ["@didor/style-guide/stylelint"],
-};
+  extends: ['@didor/style-guide/stylelint']
+}
 ```
 
 ## TypeScript
+
+This style guide provides multiple TypeScript configs. These configs correlate to the LTS Node.js versions, providing the appropriate lib, module, target, and moduleResolution settings for each version. The following configs are available:
+
+- `@didor/style-guide/typescript/node18` for Node.js 18.
+- `@didor/style-guide/typescript/node20` for Node.js 20.
 
 Ensure you have a `tsconfig.json` in your project root. You can extend the provided configuration if necessary:
 
