@@ -1,3 +1,10 @@
+# [0.4.0](https://github.com/fvena/didor-style-guide/compare/v0.3.0...v0.4.0) (2024-06-17)
+
+
+### Features
+
+* **eslint:** add eslint config ([d691103](https://github.com/fvena/didor-style-guide/commit/d691103ed71da5bd7d85e04b37f06c635686e6d0))
+
 # [0.3.0](https://github.com/fvena/didor-style-guide/compare/v0.2.0...v0.3.0) (2024-06-08)
 
 
