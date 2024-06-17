@@ -1,20 +1,20 @@
 module.exports = {
-  extends: ["@commitlint/config-conventional"],
-  "scope-enum": [
+  extends: ['@commitlint/config-conventional'],
+  'scope-empty': [1, 'never'],
+  'scope-enum': [
     2,
-    "always",
+    'always',
     [
       // Dependency-related changes
-      "deps",
+      'deps',
       // ESLint-related changes
-      "eslint",
+      'eslint',
       // Prettier-related changes
-      "prettier",
+      'prettier',
       // Stylelint-related changes
-      "stylelint",
+      'stylelint',
       // TypeScript-related changes
-      "typescript",
-    ],
-  ],
-  "scope-empty": [1, "never"],
-};
+      'typescript'
+    ]
+  ]
+}

@@ -6,8 +6,8 @@
  */
 const overridableDefaults = {
   endOfLine: 'lf',
-  tabWidth: 2,
   printWidth: 100,
+  tabWidth: 2,
   useTabs: false
 }
 
@@ -23,8 +23,8 @@ module.exports = {
   pugFramework: 'vue',
   pugSingleQuote: false,
   quoteProps: 'as-needed',
+  semi: false,
   singleQuote: true,
   trailingComma: 'none',
-  vueIndentScriptAndStyle: true,
-  semi: false
+  vueIndentScriptAndStyle: true
 }

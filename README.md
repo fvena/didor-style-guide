@@ -22,7 +22,7 @@ The configuration is composable. First, you need to extend one or both of the fo
 Then, you can extend with the following configurations if needed:
 
 - `@didor/style-guide/eslint/vue` for Vue projects.
-- `@didor/style-guide/eslint/nuxt` for Nuxt projects.
+- `@didor/style-guide/eslint/nuxt` for Nuxt projects (requires `@didor/style-guide/eslint/vue` before).
 - `@didor/style-guide/eslint/vitest` for Vite tests.
 - `@didor/style-guide/eslint/typescript` for TypeScript projects (requires `typescript` to be installed and [additional configuration](#configuring-eslint-for-typescript)).
 
